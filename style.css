@@ -31,37 +31,53 @@ h2{
 .footer{
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
-    background: #25242a;
     color: #fff;
-    justify-content: center;
+    padding: 50px;
+    background-color: #262626;
 }
 
 .footer > *{
-    flex: 1 50%
+    flex: 1 100%
 }
 
 .footer ul{
     list-style: none;
+    padding-left: 0;
 }
 
-.left-side{
-    margin-right: -30em;
-    transform: translateX(14%);
-}
-
-.footer-bottom{
-    width: 100%;
-    text-align: center;
-    padding-top: 5vh;
-    margin-top: 5vh;
-    border-top: 1px solid wheat
+.footer li{
+    line-height: 2em;
 }
 
 .right-side{
     display: flex;
-    justify-content: space-around;
-    padding-top: 10px
+    flex-flow: row wrap;
+}
+
+.right-side > *{
+    flex: 1 50%;
+    margin: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .right-side > *{
+        flex: 1
+    }
+
+    .right-side{
+        flex: 2 0;
+    }
+
+    .left-side{
+        flex: 1 0;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    h2{
+        font-size: 15px;
+        font-weight: 700;
+    }
 }
 
 input{
@@ -76,7 +92,6 @@ input{
     border-radius: 5px;
     padding: 10px 5px;
 }
-
 .fa-brands{
     font-size: 2.3rem;
     padding: 7px 8px;
@@ -93,3 +108,11 @@ input{
 .fa-brands:first-child{
     padding-left: 0;
 }
+
+.footer-bottom{
+    text-align: center;
+    padding-top: 5vh;
+    margin-top: 5vh;
+    border-top: 1px solid wheat;
+}
+
