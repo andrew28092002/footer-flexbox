@@ -23,9 +23,12 @@ h2{
     justify-content: center;
     align-items: center;
     color: #9b9b9b;
-    font-size: 80px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+h1{
+    font-size: 6rem;
 }
 
 .footer{
@@ -73,9 +76,14 @@ h2{
     }
 }
 
-@media screen and(max-width: 600px) {
+@media (max-width: 700px) {
     h2{
         font-size: 15px;
+        font-weight: 700;
+    }
+
+    h1{
+        font-size: 2rem;
         font-weight: 700;
     }
 }
